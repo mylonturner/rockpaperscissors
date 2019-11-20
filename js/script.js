@@ -4,8 +4,15 @@
 
 //GLOBAL VARIABLES
 /* global $ */
+var userInput;
 
 
+// DOCUMENT READY FUNCTION (BELOW
+$(document).ready(function(){
 
-// DOCUMENT READY FUNCTION BELOW
-
+    $("#shoot").click(function(){
+        userInput = $("#input").val();
+        console.log(userInput);
+        $("#userChoice").text(userInput);
+    });
+});
